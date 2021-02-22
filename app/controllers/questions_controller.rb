@@ -3,16 +3,16 @@ class QuestionsController < ApplicationController
     end
 
     def answer
-        ask = gets.chomp
+        @ask = params[:ask]
 
-        if ask == "?"
-            puts "Silly question, get dressed and go to work!"
+        if @ask.include("?")
+            @answer = "I'm afraid I'm not aware. In any case, I'll be there in the morning, m'lady. Don't you worry."
         elsif 
-            ask == "I am going to work."
-            puts "Great!"
+            @ask == "I want to party!"
+            @answer "This sounds very like the kind of boys' talk that I do not allow!"
         else
-            puts "I don't care, get dressed and go to work!"
+            @answer "What a topsy turvy world we've come to!"
         end
     end
-    
+
 end
