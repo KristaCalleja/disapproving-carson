@@ -4,9 +4,10 @@
         <p>You've asked:</p>
         <%= @ask  %>
     </div>
-    <p>Butler Carson replied:</p>
-    <%= @answer %>
-
+    <div class="reply">
+        <p style="font-style: underline;">Butler Carson replied:</p>
+        <div><%= image_tag "carsondisapproval.gif" %></div>
+        <h2 style="font-size: 28px;"><%= @answer %></h2>
+    </div>
+<%= link_to("Ask Carson another one", ask_path), {:style => 'color: $black'}%>
 </div>
-
-<%= link_to("Ask Carson another one", ask_path) %>
