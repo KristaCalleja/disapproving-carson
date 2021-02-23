@@ -1,7 +1,11 @@
 input:first-child{
     display: inline-block;
-    border: blue 2px solid;
+    border: gray 2px solid;
     border-radius: 37px;
-    width: 236px;
-    line-height: 4.8em;
+    width: 420px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    font-family: $input-font;
+    font-size: 22px;
+    padding: 15px;
+    outline: none;
 }
